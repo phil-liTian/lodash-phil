@@ -3,11 +3,11 @@
  * @LastEditors: phil_litian
 -->
 <script setup>
-import AddDemo from '../components/add-demo.vue'
+import MathDemo from '../components/math-demo.vue'
 </script>
 
 <template>
   <main>
-    <add-demo />
+    <math-demo />
   </main>
 </template>
