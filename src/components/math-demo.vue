@@ -8,15 +8,21 @@
   
 <script lang='ts'>
 import { defineComponent } from '@vue/runtime-core';
-import add from '../utils/add'
-import divide from '../utils/divide'
-import multiply from '../utils/multiply'
-import subtract from '../utils/subtract'
-import sum from '../utils/sum'
-import sumBy from '../utils/sumBy'
-import ceil from '../utils/ceil'
-import floor from '../utils/floor'
-import round from '../utils/round'
+import add from '../utils/math/add'
+import divide from '../utils/math/divide'
+import multiply from '../utils/math/multiply'
+import subtract from '../utils/math/subtract'
+import sum from '../utils/math/sum'
+import sumBy from '../utils/math/sumBy'
+import ceil from '../utils/math/ceil'
+import floor from '../utils/math/floor'
+import round from '../utils/math/round'
+import mean from '../utils/math/mean'
+import meanBy from '@/utils/math/meanBy';
+import min from '../utils/math/min'
+import minBy from '../utils/math/minBy'
+import max from '../utils/math/max'
+import maxBy from '../utils/math/maxBy'
 export default defineComponent({
   name: '',
   setup() {
@@ -35,6 +41,17 @@ export default defineComponent({
     // console.log('ceil', ceil(1.222, 2));
     // console.log('floor', floor(1.222, 2));
     // console.log('round', round(1.225, 2));
+    
+    // console.log('mean', mean([1, 2, 3, 6, 1]));
+    // console.log('meanBy', meanBy([{ o: 1 }, { o: 5 }], obj => obj.o));
+    
+    console.log('min', min([1, 2, -1]));
+
+    console.log('minBy', minBy([{ o: 1 }, { o: 2 }, { o: 0 }], obj => obj.o ));
+
+    console.log('max', max([1, 2, -1]));
+
+    console.log('maxBy', maxBy([{ o: 1 }, { o: 2 }, { o: 0 }], obj => obj.o ));
     
     
     return {
