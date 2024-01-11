@@ -5,6 +5,7 @@
 import baseToString from './baseToString'
 import baseToNumber from './baseToNumber'
 
+// 用于数学公式的 加、减、乘、除
 const createMathOperation = (operator, defaultValue) => {
   return (value, other) => {
     if ( value === undefined && other === undefined ) {
